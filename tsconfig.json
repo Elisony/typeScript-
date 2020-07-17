@@ -1,0 +1,46 @@
+{
+    "include": [ "src/**/*" ],
+    "exclude": [ "node_modules" ],
+    // 编译选项
+    "compilerOptions": {
+        // 是否以严格模式解析
+        // "strict": true, 
+        // 解析非相对模块名的基准目录
+        // "baseUrl": ".",
+        // 输出目录
+        // "outDir": "./output",
+        // 移除注释
+        // "removeComments": true,
+        // 指定特殊模块的路径,如jQuery
+        // "paths": {
+            // "jquery": [
+            //     "node_modules/jquery/dist/jquery"
+            //   ]
+        // },
+        // 运行从没有设置默认到处的模块中默认导入
+        "allowSyntheticDefaultImports": true,
+        // 启用装饰器
+        "experimentalDecorators": true,
+        // 运行便于JavaScript文件
+        "allowJs": true,
+        // 采用的模块系统
+         "module": "commonjs",
+        // 编译输出目标es版本
+        "target": "es5",
+        // 如何处理模块
+        "moduleResolution": "node",
+        // 将每个文件作为单独的模块
+        "isolatedModules": true,
+        // 编译过程中需要引入的库文件的列表
+        "lib": [
+            "dom",
+            "es5",
+            "es6",
+            "es7",
+            "es2015.promise"
+        ],
+         // 是否包含可以用于 debug 的 sourceMap
+        "sourceMap": true,
+        "pretty": true
+    }
+}
